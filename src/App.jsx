@@ -8,7 +8,5 @@ export default () => {
 
     useEffect(() => { dispatch(fetchUsersAction()); }, [])
 
-    return <>{users.length > 0 ?
-        users.map((user, index) => <div key={index}> {user.email}</div>)
-        : <> loading</>}</>
+    return <>{users.length > 0 ? users.map((user, index) =><div key={index}> {user.email}</div>): <> loading</>}</>
 }
